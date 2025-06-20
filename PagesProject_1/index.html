@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of a passionate web developer. Projects, skills, and contact form included." />
+  <title>John Doe | Frontend Web Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav role="navigation" id="main-nav">
+      <ul>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>Hello! I’m a web developer with a passion for clean design, performance, and accessibility. I enjoy solving real-world problems with code and continuously learning new technologies.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="web">
+      <figure>
+        <img src="Blog.jpg" alt="Screenshot of Project 1 interface" loading="lazy" />
+        <figcaption>Project 1 – Responsive blog layout</figcaption>
+      </figure>
+      <p>A responsive blog built with HTML5 and CSS Grid, showcasing dynamic layout techniques.</p>
+    </article>
+
+    <article class="data">
+      <figure>
+        <img src="Dashboard.jpg" alt="Screenshot of Project 2 dashboard design" loading="lazy" />
+        <figcaption>Project 2 – Data Dashboard</figcaption>
+      </figure>
+      <p>Interactive data dashboard using Chart.js and accessible navigation for screen readers.</p>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & Semantic Structure</li>
+      <li>CSS3 / Sass</li>
+      <li>JavaScript (ES6+)</li>
+      <li>Accessibility (WCAG compliance)</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required aria-required="true" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required aria-required="true" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+      <button type="submit" name="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Doe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
